@@ -1,0 +1,33 @@
+---
+layout: base
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+<header>
+    <h1>{{ title }}</h1>
+    <nav>
+        <a href="../about/index.html">About</a>
+        <a href="../photos/index.html">Individual Photos</a>
+    </nav>
+</header>
+<main>
+    <h1>Photos Collection</h1>
+    <h2>A Collection Of The Art Of Music</h2>
+    <ul>
+    {%- for photo in photos.0apgfsq.media %}
+        <a href="../photos/{{pagination.pageNumber| plus: 1}}">
+            <img src={{photo.src.tiny}} alt={{photo.alt}}>
+        </a>
+    {% endfor -%}
+    </ul>
+</main>
+<footer>
+    <hr>
+    <p>
+        <small>
+            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+        </small>
+    </p>
+</footer>
