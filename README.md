@@ -3,7 +3,7 @@
 To clone the project locally:
 
 ```shell-session
-git clone https://github.com/ColdShaker/Project1.git
+git clone https://github.com/Phuoc-Nguyen-CS/Project1.git
 ```
 
 Install and start the [Eleventy static site generator][1]:
